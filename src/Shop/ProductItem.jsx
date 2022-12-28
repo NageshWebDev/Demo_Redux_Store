@@ -2,9 +2,11 @@ import style from './ProductItem.module.css';
 
 const ProductItem = (props) => {
   const { id, title, price, description, icon, quantity} = props;
+  
+  console.log("Qty : "+quantity)
 
   return (
-    <li className={style.item}>
+    <li id={id} className={style.item}>
       <main>
         <header>
           <h3><i className={icon} style={{color: 'lightseagreen'}}></i> {title}</h3>
